@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+ 	xmlns:android="http://schemas.android.com/apk/res/android">
+  
+	<ListPreference
+		android:title="@string/languages"
+		android:summary="@string/languages_summary"
+		android:key="listPref"
+		android:defaultValue="1" />
+	
+	<PreferenceCategory
+		android:title="Connection settings">
+				
+			<CheckBoxPreference
+				android:key="low_stream"
+				android:title="@string/low_speed"
+				android:defaultValue="true"
+				android:summary="@string/low_speed_summary" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:title="@string/irc_settings">
+		
+			<EditTextPreference
+				android:title="@string/nickname"
+				android:summary="@string/nickname_summary"
+				android:key="irc_nickname" />
+		
+	</PreferenceCategory>
+  
+</PreferenceScreen>
