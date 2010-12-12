@@ -1,0 +1,10 @@
+#labels Featured,Versioninformations
+= What's New =
+
+Vous trouvez ici toutes les informations concernant le développement du player Puls'Droid !!!
+
+= Puls'Droid Beta 1 Revision 3 =
+  * Mise à disposition de la version au publique
+  * Création de l'interface graphique
+  * Gestion des 4 URL's de stream (Puls'Radio, Puls'80, Puls'90, Puls'Trance)
+  * Ajout d'un chat IRC (Clinet)
