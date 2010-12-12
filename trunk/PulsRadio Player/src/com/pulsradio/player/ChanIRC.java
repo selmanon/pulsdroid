@@ -1,4 +1,4 @@
-package com.pulsradio.player;
+package com.pulsradio.pulsdroid;
 
 /**
  * Copyright (C) 2010 <David SANCHEZ>
@@ -16,6 +16,7 @@ package com.pulsradio.player;
 
 import java.lang.String;
 import java.util.LinkedList;
+
 import android.app.Activity;
 import android.content.res.Configuration;
 import android.os.Bundle;

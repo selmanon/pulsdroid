@@ -1,4 +1,4 @@
-package com.pulsradio.player;
+package com.pulsradio.pulsdroid;
 
 import java.io.File;
 import java.io.FileInputStream;

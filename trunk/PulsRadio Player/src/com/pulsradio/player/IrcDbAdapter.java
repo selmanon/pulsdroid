@@ -1,4 +1,4 @@
-package com.pulsradio.player;
+package com.pulsradio.pulsdroid;
 
 /**
  * Copyright (C) 2010 <David SANCHEZ>

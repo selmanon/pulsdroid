@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 	<!-- Applications names -->
 	<string name="app_name">Puls\'Droid</string>
 	<string name="irc_name">Puls\'Droid Chat</string>
@@ -53,7 +53,10 @@
 	<!-- Notification -->
 	<string name="notifi_execution">Puls\'Droid Launched</string>
 	
+	<!-- Chronometer -->
+	<string name="chronometer_initial_format"><xliff:g id="initial-format">%s</xliff:g></string>
+	
 	<!-- About -->
 	<string name="about_title">About Puls\'Droid</string>
-	<string name="about_text"><center><b>Version 1.0 R14</b>\n\n<a href="http://www.pulsradio.com/">www.pulsradio.com</a>\n\nCopyright &#169; 2010 &#60;David SANCHEZ&#62;.\n\nAll rights reserved.</center></string>
+	<string name="about_text"><center><b>Version 1.0 R4</b>\n\n<a href="http://www.pulsradio.com/">www.pulsradio.com</a>\n\nCopyright &#169; 2010 &#60;David SANCHEZ&#62;.\n\nAll rights reserved.</center></string>
 </resources>
