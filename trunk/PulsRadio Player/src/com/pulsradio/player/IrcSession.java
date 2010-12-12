@@ -1,4 +1,4 @@
-package com.pulsradio.player;
+package com.pulsradio.pulsdroid;
 
 /**
  * Copyright (C) 2010 <David SANCHEZ>
@@ -16,15 +16,32 @@ package com.pulsradio.player;
 
 import java.util.List;
 
-import android.os.Handler;
-import android.os.Message;
-
 import jerklib.ConnectionManager;
 import jerklib.Profile;
 import jerklib.Session;
-import jerklib.events.*;
+import jerklib.events.AwayEvent;
+import jerklib.events.CtcpEvent;
+import jerklib.events.IRCEvent;
 import jerklib.events.IRCEvent.Type;
+import jerklib.events.InviteEvent;
+import jerklib.events.JoinCompleteEvent;
+import jerklib.events.JoinEvent;
+import jerklib.events.KickEvent;
+import jerklib.events.MessageEvent;
+import jerklib.events.NickChangeEvent;
+import jerklib.events.NickInUseEvent;
+import jerklib.events.NickListEvent;
+import jerklib.events.NoticeEvent;
+import jerklib.events.NumericErrorEvent;
+import jerklib.events.PartEvent;
+import jerklib.events.QuitEvent;
+import jerklib.events.TopicEvent;
+import jerklib.events.WhoEvent;
+import jerklib.events.WhoisEvent;
+import jerklib.events.WhowasEvent;
 import jerklib.listeners.IRCEventListener;
+import android.os.Handler;
+import android.os.Message;
 
 public class IrcSession implements IRCEventListener, Runnable {
 	
