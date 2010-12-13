@@ -4,6 +4,7 @@
 Vous trouvez ici toutes les informations concernant le développement du player Puls'Droid !!!
 
 = Puls'Droid Beta 1 Revision 5 =
+  * Ajout de la page "About" avec informations de version et droits sur la page
   * Répartition des classes Java dans 4 packages différents
   * Suppression du lien "About" dans le menu de l'application
   * "What's new" et "Terms of Use" renvoie vers ce site
