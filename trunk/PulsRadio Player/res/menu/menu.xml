@@ -4,12 +4,9 @@
 		android:id="@+id/irc"
 		android:title="@string/irc_label"
 		android:icon="@drawable/ic_menu_irc" />
+	
 	<item
 		android:id="@+id/settings"
 		android:title="@string/settings_label"
 		android:icon="@drawable/ic_menu_preferences" />
-	<item
-		android:id="@+id/about"
-		android:title="@string/about_label"
-		android:icon="@drawable/ic_menu_about" />
 </menu>

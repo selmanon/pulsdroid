@@ -7,7 +7,6 @@
 	<!-- Menu names -->
 	<string name="irc_label">IRC</string>
 	<string name="settings_label">Settings</string>
-	<string name="about_label">About</string>
 	
 	<!-- Puls Channels -->
 	<string name="puls_radio">Puls\'Radio</string>
@@ -49,6 +48,12 @@
 	<string name="nickname_summary">Select your IRC Chan Nickname</string>
 	<string name="low_speed">Low-speed connection</string>
 	<string name="low_speed_summary">Use low flow urls ?</string>
+	<string name="news">What\'s New</string>
+	<string name="new_summary">Last news of Puls\'Droid player</string>
+	<string name="about_pulsdroid">About Puls\'Droid</string>
+	<string name="about_pulsdroid_summary">Informations about Puls\'Droid player</string>
+	<string name="terms">Terms of Use</string>
+	<string name="terms_summary">License informations</string>
 	
 	<!-- Notification -->
 	<string name="notifi_execution">Puls\'Droid Launched</string>
@@ -57,6 +62,7 @@
 	<string name="chronometer_initial_format"><xliff:g id="initial-format">%s</xliff:g></string>
 	
 	<!-- About -->
-	<string name="about_title">About Puls\'Droid</string>
-	<string name="about_text"><center><b>Version 1.0 R4</b>\n\n<a href="http://www.pulsradio.com/">www.pulsradio.com</a>\n\nCopyright &#169; 2010 &#60;David SANCHEZ&#62;.\n\nAll rights reserved.</center></string>
+	<string name="about_title">About</string>
+	<string name="about_version">Version 1.0 R5 (13/12/2010)</string>
+	<string name="about_copyright">Copyright &#169; 2010 www.pulsradio.com \n\nCoded by &#60;David SANCHEZ&#62;\n\nAll rights reserved.</string>
 </resources>
