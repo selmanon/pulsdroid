@@ -17,6 +17,11 @@ package com.pulsradio.irc;
 import java.util.LinkedList;
 
 import android.app.Activity;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Color;
 import android.net.wifi.WifiManager;
@@ -54,14 +59,9 @@ public class ChanIRC extends Activity {
     private Handler mHandler;
     private IrcSession mIrcSession;
     private WifiLock mWifilock;
-    
-    /**
-	 * Déclaration de l'objet inflater
-	 * C'est un objet de la classe MenuInflater
-	 * Cela permet d'instancier les menu au format XML en menu objet
-	 */
-	private MenuInflater inflater;
-	
+    private NotificationManager notificationManager;
+	private final int NOTIFICATION_ID = 1011;
+ 	private MenuInflater inflater;
 	private Thread thread;
 
 
@@ -81,7 +81,8 @@ public class ChanIRC extends Activity {
         mPass = "";
         mChan = "#Puls";
         mSecret = "";
-
+        
+        
         /**
          *  Create text handler
          */
@@ -140,7 +141,8 @@ public class ChanIRC extends Activity {
         thread = new Thread(mIrcSession);
         thread.start();
 
-}
+        chatNotification(true);
+    }
 
     /**
      * Called when the tabulation key is pressed
@@ -291,10 +293,40 @@ public class ChanIRC extends Activity {
     	switch (item.getItemId()) {
 	    	case R.id.quit:
 	    		mIrcSession.quit();
-	    		onDestroy();
+	    		super.onStop();
+	            chatNotification(false);
 	    		return true;
     	}
     	return false;
+    }
+    
+    private void chatNotification(boolean create) {
+    	if (create == true) {
+    		int icon = R.drawable.icon_chat;        									// icon from resources
+    		CharSequence tickerText = "Puls'Droid Chat IRC Launched";		// ticker-text
+    		long when = System.currentTimeMillis();         					// notification time
+    		Context context = getApplicationContext(); 							// application Context
+    		CharSequence contentTitle = "Puls'Droid Chat IRC"; 							// expanded message title
+    		CharSequence contentText = "";     							// expanded message text
+
+    		Intent notificationIntent = new Intent(this, ChanIRC.class);
+    		notificationIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+    		PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0);
+           
+    		// the next two lines initialize the Notification, using the configurations above
+    		Notification notification = new Notification(icon, tickerText, when);
+    		notification.setLatestEventInfo(context, contentTitle, contentText, pendingIntent);
+    		
+    		notificationManager = (NotificationManager) context.getSystemService(NOTIFICATION_SERVICE); 		
+            notification.flags |= Notification.FLAG_NO_CLEAR;
+            notification.flags |= Notification.FLAG_ONGOING_EVENT;
+            notificationManager.notify(NOTIFICATION_ID, notification);
+    		
+    	}
+    	else {
+    		notificationManager.cancel(NOTIFICATION_ID);
+    	}
+    	
     }
 
     @Override
@@ -319,12 +351,12 @@ public class ChanIRC extends Activity {
     
     @Override
     protected void onStop() {
-        super.onStop();
+        //super.onStop();
     }
     
     @Override
     protected void onDestroy() {
-        mIrcSession.quit();
+        //mIrcSession.quit();
         if (mWifilock.isHeld())
             mWifilock.release();
         super.onDestroy();
