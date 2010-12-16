@@ -63,6 +63,6 @@
 	
 	<!-- About -->
 	<string name="about_title">About</string>
-	<string name="about_version">Version 1.0 R5 (13/12/2010)</string>
+	<string name="about_version">Beta 1.5 R6 (16/12/2010)</string>
 	<string name="about_copyright">Copyright &#169; 2010 www.pulsradio.com \n\nCoded by &#60;David SANCHEZ&#62;\n\nAll rights reserved.</string>
 </resources>
