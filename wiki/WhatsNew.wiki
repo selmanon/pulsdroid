@@ -4,6 +4,8 @@
 Vous trouvez ici toutes les informations concernant le développement du player Puls'Droid !!!
 
 = Puls'Droid Beta 1 Revision 6 =
+  * Mise à disposition de cette version le *16/12/2010*
+  * Récupération des titres des différents canaux qui sont affiché au lancement de la notification
   * Refonte du logo de l'application, en meilleur qualitée
   * Ajout de la notification pour le Chat IRC
   * Ajout du logo du Chat IRC pour la notification
