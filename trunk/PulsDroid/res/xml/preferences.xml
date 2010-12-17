@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+ 	xmlns:android="http://schemas.android.com/apk/res/android">
+  
+	<ListPreference
+		android:title="@string/languages"
+		android:summary="@string/languages_summary"
+		android:key="listPref"
+		android:defaultValue="1" />
+	
+	<PreferenceCategory
+		android:title="Connection settings">
+				
+			<CheckBoxPreference
+				android:key="low_stream"
+				android:title="@string/low_speed"
+				android:defaultValue="true"
+				android:summary="@string/low_speed_summary" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:title="@string/irc_settings">
+		
+			<EditTextPreference
+				android:title="@string/nickname"
+				android:summary="@string/nickname_summary"
+				android:key="irc_nickname" />
+		
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:title="@string/about_title">
+		
+			<Preference
+                android:title="@string/news"
+                android:summary="@string/new_summary"
+                android:key="news" />
+                
+			<Preference
+                android:title="@string/about_pulsdroid"
+                android:summary="@string/about_pulsdroid_summary"
+                android:key="about" />                
+                
+			<Preference
+                android:title="@string/terms"
+                android:summary="@string/terms_summary"
+                android:key="terms" />
+		
+	</PreferenceCategory>
+  
+</PreferenceScreen>
