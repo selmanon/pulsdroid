@@ -1,0 +1,11 @@
+HTTPHeaderTag.class
+ID3StringTag.class
+ID3Tag.class
+IcyTag.class
+ImageableTag.class
+MP3MetadataParser.class
+MP3Tag.class
+MP3TagParseSupport.class
+StringableTag.class
+TagParseEvent.class
+TagParseListener.class

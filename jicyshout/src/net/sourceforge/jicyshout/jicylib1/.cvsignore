@@ -1,0 +1,6 @@
+ID3InputStream.class
+IcyInputStream.class
+MP3InputStreamFactory.class
+SeekableInputStream.class
+SimpleMP3DataSource.class
+UDPMetadataListener.class
