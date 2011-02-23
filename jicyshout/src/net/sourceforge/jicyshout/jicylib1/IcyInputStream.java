@@ -13,6 +13,9 @@ import net.sourceforge.jicyshout.jicylib1.metadata.MP3TagParseSupport;
 public class IcyInputStream extends BufferedInputStream implements Runnable {
 
     private MP3TagParseSupport tagParseSupport;
+    
+    private String name;
+    public String value;
 
 
     /**
@@ -271,11 +274,15 @@ public class IcyInputStream extends BufferedInputStream implements Runnable {
         int valueStartIdx = (tagString.charAt(separatorIdx+1) == '\'') ? separatorIdx + 2 : separatorIdx + 1;
         int valueEndIdx = (tagString.charAt(tagString.length()-1)) == '\'' ? tagString.length() - 1 : tagString.length();
 
-        String name = tagString.substring (0, separatorIdx);
-        String value = tagString.substring (valueStartIdx, valueEndIdx);
+        name = tagString.substring (0, separatorIdx);
+        value = tagString.substring (valueStartIdx, valueEndIdx);
         System.out.println ("StreamTitle : " + value);
         IcyTag tag = new IcyTag (name, value);
         setTag(tag);
+    }
+    
+    public String getValue(){
+    	return this.value;
     }
     
     /**
