@@ -28,12 +28,15 @@ public class SimpleDevGUI {
             System.out.println("icy-pub:" + icy.IcyTagged("icy-pub"));            
             System.out.println("icy-metaint:" + icy.IcyTagged("icy-metaint"));
             System.out.println("icy-br:" + icy.IcyTagged("icy-br"));
-            //System.out.println("StreamTitle:" + icy.IcyTagged("streamtitle"));
-
             
+         
+
             while (icy.available() > -1) {
-            	icy.read (chow, 0, chow.length);
+            	icy.read(chow, 0, chow.length);
             }
+            
+            
+            //System.out.println("Test");
             
         } catch (Exception e) {
             e.printStackTrace();
