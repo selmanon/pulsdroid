@@ -1,0 +1,6 @@
+set solib-search-path /home/vaclav/work/aacplayer-android/bin/ndk/local/armeabi
+directory /usr/local/google/android-ndk-r4/build/platforms/android-3/arch-arm/usr/include
+directory /home/vaclav/work/aacplayer-android/jni/ffmpeg
+directory /home/vaclav/work/aacplayer-android/jni/ffmpeg
+directory /home/vaclav/work/aacplayer-android/jni/ffmpeg
+directory /home/vaclav/work/aacplayer-android/jni/ffmpeg
