@@ -1,0 +1,9 @@
+Ce document contient diverse informations concernant l'utilisation du client IRC pour Puls'Droid sous le système d'exploitation Android.
+
+Couleur du text affiché dans le chan :
+
+JAUNE: 
+BLANC:
+VERT:
+GRIS:
+BLEU:
