@@ -3,6 +3,7 @@ Ce document contient diverse informations concernant l'utilisation du client IRC
 Couleur du text affiché dans le chan :
 
 JAUNE: Messages de bienvenue, Actualités
+
 BLANC: Messages postés par les utilisateurs
 VERT: Nom des utilisateurs connectés au Chan
 GRIS: Notification, Message de connexion et d'initialisation
