@@ -1,31 +1,31 @@
 Voici différentes captures d'écran de l'application Puls'Droid :
 
-*Premier lancement :*
+*Premier lancement :*<br>
 http://img153.imageshack.us/img153/5567/firstq.png
 
-*Première page :*
+*Première page :*<br>
 http://img21.imageshack.us/img21/5791/homepages.png
 
-*Chargement du flux :*
+*Chargement du flux :*<br>
 http://img816.imageshack.us/img816/5599/loading.png
 
-*Menu principal :*
+*Menu principal :*<br>
 http://img5.imageshack.us/img5/3737/menuplayer.png
 
-*Préférences :*
+*Préférences :*<br>
 http://img705.imageshack.us/img705/4453/preferencesk.png
 
-*Préférence, qualité du flux :*
+*Préférence, qualité du flux :*<br>
 http://img195.imageshack.us/img195/4453/qualityc.png
 
-*Préférence, choix du codec AAC :*
+*Préférence, choix du codec AAC :*<br>
 http://img695.imageshack.us/img695/5717/codecf.png
 
-*Chat IRC :*
+*Chat IRC :*<br>
 http://img842.imageshack.us/img842/1154/chatnc.png
 
-*Aucune connexion :*
+*Aucune connexion :*<br>
 http://img857.imageshack.us/img857/6955/noconnexion.png
 
-*Quitter l'application :*
+*Quitter l'application :*<br>
 http://img824.imageshack.us/img824/4733/exitp.png
