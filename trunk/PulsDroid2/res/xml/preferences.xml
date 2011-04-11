@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="@string/connection_settings_stream">
-        <ListPreference android:entries="@array/bandwidth" android:entryValues="@array/bandwidth_values" android:key="bandwidth" android:defaultValue="highspeed" android:title="Qualité du flux" android:summary="Sélectionner la qualité du flux (Bas débit, Haut débit ou Entreprise) ?"></ListPreference>
-        <ListPreference android:id="@+id/connector" android:key="lowspeedconnector" android:entryValues="@array/lowspeedconnector_values" android:entries="@array/lowspeedconnector" android:defaultValue="faaddecoder" android:title="Décodeur bas débit" android:summary="Sélectionner le décoder bas débit à utiliser."></ListPreference>  
-    </PreferenceCategory>
-
-</PreferenceScreen>
