@@ -5,7 +5,7 @@ Vous trouvez ici toutes les informations concernant le développement du player 
 
 = Puls'Droid RC 1 release candidature =
   * Mise à disposition de cette version le *11/04/2011*
-  * Liste des stations de radio (Radio, Trance 90 et 80)
+  * Liste des stations de radio (Radio, Trance, 90 et 80)
   * Titre des différentes radios
   * Affichage du titre de la musique actuelle pour la station Puls'Radio
 
