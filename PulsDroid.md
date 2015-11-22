@@ -1,0 +1,1 @@
+Puls'Droid est le nom donné au player (lecteur audio) de l'association Puls'Radio sous la plateforme Android.
